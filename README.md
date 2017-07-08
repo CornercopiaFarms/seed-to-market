@@ -22,7 +22,7 @@ Seed to Market is a full-stack web application to help small farms track crops a
 ### Reports
 ![Reports](screenshots/Reports.png)
 
-##Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
