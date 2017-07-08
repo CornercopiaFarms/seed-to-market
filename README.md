@@ -85,5 +85,5 @@ localhost:5000
 * Heroku
 
 ## Acknowledgments
-* Our clients Cherry Flowers of Page and Flowers and Courtney Tchida, manager of Cornercopia Student Organic Farm.
+* Our clients Cherry Flowers of Page and Flowers and Courtney Tchida of Cornercopia Student Organic Farm.
 * The instructors and staff at Prime Digital Academy
