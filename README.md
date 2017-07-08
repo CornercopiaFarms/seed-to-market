@@ -9,9 +9,13 @@ Seed to Market is a full-stack web application to help small farms track crops a
 ### Login
 ![Login](screenshots/Login.png)
 ### Planner
+#### Planner page
 ![Planner](screenshots/Planner.png)
+#### Planner page with seed inventory view
 ![PlannerSeedView](screenshots/PlannerSeedView.png)
+#### Planner page with harvest modal view
 ![PlannerHarvestModal](screenshots/PlannerHarvestModal.png)
+#### Planner page with sell modal view
 ![PlannerSellModal](screenshots/PlannerSellModal.png)
 ### Inventory
 ![Inventory](screenshots/Inventory.png)
@@ -39,7 +43,7 @@ You will need to have the following software installed:
 Steps to get the development environment running.
 1. Clone the repository to your local machine.
 ```
-git clone https://github.com/
+git clone https://github.com/CornercopiaFarms/seed-to-market.git
 ```
 2. Install all dependencies.
 ```
