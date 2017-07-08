@@ -1,84 +1,208 @@
 /*USE VW or VW percentage instead of px, eliminates alignment issues when changing view size*/
 
-/*.instructions .container h1 {
-    font-size: 24px;
-    font-weight: 700;
-}*/
+.checkbox-seeds {
+  margin-bottom: 15px;
+  margin-left: 5%;
+}
 
-/*.instructions {
-    background-color: #333333;
-    color: #DDDDDD;
-}*/
+.checkbox-seeds-box {
+  transform: scale(1.5);
+}
+
+.content-div {
+  background-color: white;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #00778b !important;
+  font-size: 64px !important;
+  text-shadow: 3px 3px 3px black;
+}
+
+h2{
+  padding-top: 30px;
+}
+
+#farmTitle {
+  text-align: left;
+}
+
+.login {
+  margin-bottom: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.modal-inputs {
+  margin-bottom: 5px;
+}
+
+.suppliers {
+  margin-bottom: 12px;
+}
+
+.headingDiv {
+  margin-top: 70px;
+}
+
+.icons {
+  float: left;
+  margin-left: 40px;
+  margin-top: 10px;
+  margin-right: 40px;
+  height: 60px;
+  width: 60px;
+}
+
+.farmIcon {
+  /*margin-left: 40px;*/
+  /*margin-top: 10px;*/
+  margin-right: 40px;
+  height: 100%;
+  width: auto;
+  float: left;
+}
+
 input {
   border: 1px solid black;
   border-radius: 5px;
 }
-.btn-danger {
-    margin-left: 10px;
+
+.logoDiv{
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  padding: 30px;
 }
-.buttons {
-  padding: 10px;
+
+.modal-content {
+  /*border: 2px solid black;*/
+  border-radius: 10px !important;
+}
+
+.btn-danger {
+  margin-left: 10px;
+}
+.btn-inventory-toggle {
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  /*margin-left: 5vw;*/
+  margin-bottom: 1vw;
 }
 .container p {
-    margin-top : 14px;
+  margin-top : 14px;
 }
+
+.edit-field{
+  padding:0px;
+  margin: 0px;
+  width:5px;
+}
+
+
+
+#login{
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 50px;
+}
+
+
+
 .logout {
   float: right;
+  margin-top: 5px;
 }
+body {
+  background: url("/views/images/barley.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 .message {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .message p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .message:nth-child(odd) {
-     background-color: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .message:nth-child(even) {
-    background-color: #f8f8f8;
+  background-color: #f8f8f8;
+}
+
+.nav-bar-seed {
+  position: sticky;
+  z-index: 9999;
+  width: 100%;
+}
+
+.planner-inventory{
+  max-height: 405px;
+  margin-bottom: 30px;
+}
+.planner-tables {
+  overflow-y: auto;
 }
 .vertical-line{
-     width: 45vw; /* Line width */
-     background-color: black; /* Line color */
-     height: 1px;
-     margin-top: 10px;
-   }
+  width: 45vw; /* Line width */
+  background-color: black; /* Line color */
+  height: 1px;
+  margin-top: 10px;
+}
 .wrap {
-      width:60vw;
-      height:15vh;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      /*margin:0 auto;*/
+  width:60vw;
+  height:15vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /*margin:0 auto;*/
 }
 .left_col {
-      float:left;
-      width:30vw;
+  float:left;
+  width:30vw;
 }
 .right_col {
-      float:right;
-      width:30vw;
+  float:right;
+  width:30vw;
 }
 #entryForm {
-    margin-top: 14px;
+  margin-top: 14px;
 }
 
 #container {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 #farmpage {
   margin-left: 10vw;
+  margin-top: 5vh;
   line-height: 300%;
   height: 50vh;
+}
+#farm-content {
+  margin-top: 15vh;
+}
+.receipt-img {
+  width: 60%;
+  height: auto;
+}
+.register {
+  color: #00778b !important;
+  text-shadow: 1.5px 1.5px 1.5px black;
+  font-size: 21px;
 }
 #register {
   align-items: center;
   margin-left: 40vw;
 }
 #registerbackground {
-  background-color: #845bb8;
   height: 100vh;
   width: 100vw;
   /*color: black;*/

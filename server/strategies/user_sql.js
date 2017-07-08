@@ -2,6 +2,7 @@ var passport = require('passport');
 var localStrategy = require('passport-local').Strategy;
 var encryptLib = require('../modules/encryption');
 // var connection = require('../modules/connection');
+/*
 var pg = require('pg');
 
 //@TODO update pool config for Heroku deployment
@@ -19,6 +20,8 @@ var config = {
 //it will keep idle connections open for a 30 seconds
 //and set a limit of maximum 10 idle clients
 var pool = new pg.Pool(config);
+*/
+var pool = require('../modules/pool');
 console.log('clients connected: ', connectCount);
 
 var acquireCount = 0;
@@ -34,7 +37,7 @@ pool.on('connect', function () {
 });
 
 passport.serializeUser(function(user, done) {
-    done(null, user.id);
+    done(null, user.user_id);
 });
 
 passport.deserializeUser(function(id, done) {
@@ -49,7 +52,7 @@ passport.deserializeUser(function(id, done) {
 
     var user = {};
 
-    client.query("SELECT * FROM users WHERE id = $1", [id], function(err, result) {
+    client.query("SELECT * FROM users WHERE user_id = $1", [id], function(err, result) {
 
       // Handle Errors
       if(err) {
@@ -66,7 +69,7 @@ passport.deserializeUser(function(id, done) {
           return done(null, false, {message: 'Incorrect credentials.'});
       } else {
         // user found
-        console.log('User row ', user);
+        // console.log('User row ', user);
         done(null, user);
       }
 
